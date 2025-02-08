@@ -1,11 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 [AddComponentMenu("Breakable Windows/Breakable Window")]
 [RequireComponent(typeof(AudioSource))]
-public class BreakableWindow : MonoBehaviour {
-
+public class BreakableWindow : MonoBehaviour
+{
+    public GameObject _metalCover;
+    public float _metalCoverMoveDuration = 4f;
+    public float _metalCoverMoveDelay = 1f;
     
     [Tooltip("Layer should be TransparentFX or your own layer for breakable windows.")]
     public LayerMask layer;
@@ -46,6 +49,7 @@ public class BreakableWindow : MonoBehaviour {
     private bool allreadyCalculated = false;
     private GameObject splinterParent;
     int[] tris;
+    private Tween _tween;
 
     void Start()
     {
@@ -229,10 +233,18 @@ public class BreakableWindow : MonoBehaviour {
             GetComponent<AudioSource>().clip = breakingSound;
             GetComponent<AudioSource>().Play();
         }
-
+        
         return splinters.ToArray();
     }
 
+    public void MoveMetalCover()
+    {
+        if (_tween != null && _tween.IsActive()) 
+            _tween.Kill();
+
+        Vector3 offset = new Vector3(0f, -1f, 0f);
+        _tween = _metalCover.transform.DOMove(_metalCover.transform.position + offset, _metalCoverMoveDuration).SetDelay(_metalCoverMoveDelay);
+    }
 
     void OnCollisionEnter(Collision col)
     {

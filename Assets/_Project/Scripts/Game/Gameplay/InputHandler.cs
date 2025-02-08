@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace _Project.Gameplay
 {
-    public class InputHandler : MonoBehaviour
+    public class InputHandler
     {
         public event Action OnLeftMouseButtonKey;
         public event Action OnLeftMouseButtonKeyDown;
         public event Action OnLeftMouseButtonKeyUp;
         
-        private void Update()
+        public void Update()
         {
             if (Input.GetKey(KeyCode.Mouse0))
             {

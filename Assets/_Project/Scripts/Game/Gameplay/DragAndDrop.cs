@@ -1,43 +1,31 @@
-﻿using System;
-using _Project.UI;
+﻿using _Project.UI;
 using UnityEngine;
 
 namespace _Project.Gameplay
 {
-    public class DragAndDrop : MonoBehaviour
+    public class DragAndDrop
     {
-        [SerializeField] private float _dragDistance;
+        private readonly Camera _camera;
+        private readonly HUD _hud;
+        private readonly float _interactDistance;
 
-        private HUD _hud;
         private DraggableObject _draggableObject;
-        private Camera _camera;
-        private bool _isInit;
         private bool _isDragging;
 
-        private void Awake() => _camera = Camera.main;
-
-        public void Init(InputHandler inputHandler, HUD hud)
+        public DragAndDrop(Camera camera, InputHandler inputHandler, HUD hud, float interactDistance)
         {
+            _camera = camera;
             _hud = hud;
-            
+            _interactDistance = interactDistance;
+
             inputHandler.OnLeftMouseButtonKey += OnLeftMouseButtonKey;
             inputHandler.OnLeftMouseButtonKeyUp += OnLeftMouseButtonKeyUp;
-
-            _isInit = true;
         }
 
-        private void FixedUpdate()
-        {
-            if(_isInit == false)
-                return;
-
-            ThrowRay();
-        }
-        
-        private void ThrowRay()
+        public void ThrowRay()
         {
             Ray ray = new Ray(_camera.transform.position, _camera.transform.forward);
-            if (Physics.Raycast(ray, out RaycastHit hit, _dragDistance))
+            if (Physics.Raycast(ray, out RaycastHit hit, _interactDistance))
             {
                 if (hit.collider.TryGetComponent(out DraggableObject draggableObject))
                 {
@@ -80,12 +68,6 @@ namespace _Project.Gameplay
             
             _draggableObject = null;
             _isDragging = false;
-        }
-        
-        private void OnDrawGizmos()
-        {
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawRay(transform.position, Camera.main.transform.forward * _dragDistance);
         }
     }
 }
