@@ -20,6 +20,7 @@
                 </e>
                 <e p="Environment" t="Include">
                   <e p="DraggableObject.cs" t="Include" />
+                  <e p="HumanAnimation.cs" t="Include" />
                   <e p="WindowsBreaker.cs" t="Include" />
                 </e>
                 <e p="Player" t="Include">
@@ -66,6 +67,13 @@
                 <e p="DOTweenModuleUtils.cs" t="Include" />
               </e>
               <e p="readme.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Kevin Iglesias" t="Include">
+            <e p="Human Base Meshes" t="Include">
+              <e p="Materials" t="Include">
+                <e p="HumanBaseMeshesShader.shader" t="Include" />
+              </e>
             </e>
           </e>
           <e p="ModularFirstPersonController" t="Include">

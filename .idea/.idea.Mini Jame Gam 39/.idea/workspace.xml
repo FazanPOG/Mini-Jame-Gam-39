@@ -22,21 +22,6 @@
     <list default="true" id="f1ebebf2-073d-4817-b680-390fb1275b0b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mini Jame Gam 39/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mini Jame Gam 39/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mini Jame Gam 39/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mini Jame Gam 39/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/BreakbleWindow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/BreakbleWindow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Boot.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Boot.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/DragAndDrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/DragAndDrop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/DragAndDrop.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/DragAndDrop.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/DraggableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Environment/DraggableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/DraggableObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Environment/DraggableObject.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/InputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/InputHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/InputHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/InputHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/Player.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/WindowsBreaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Environment/WindowsBreaker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/WindowsBreaker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Environment/WindowsBreaker.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Root/Boot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Root/Boot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +65,7 @@
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Root/GameLoopState.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/PlayerSFXHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Environment/HumanAnimation.cs" />
       </list>
     </option>
   </component>
@@ -125,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738995953450</updated>
-      <workItem from="1738995994066" duration="22421000" />
+      <workItem from="1738995994066" duration="23626000" />
     </task>
     <servers />
   </component>
