@@ -11,12 +11,32 @@
         <e p="_Project" t="Include">
           <e p="Scripts" t="Include">
             <e p="Game" t="Include">
+              <e p="Audio" t="Include">
+                <e p="AudioPlayer.cs" t="Include" />
+              </e>
               <e p="Gameplay" t="Include">
-                <e p="DragAndDrop.cs" t="Include" />
-                <e p="DraggableObject.cs" t="Include" />
-                <e p="InputHandler.cs" t="Include" />
-                <e p="Player.cs" t="Include" />
-                <e p="WindowsBreaker.cs" t="Include" />
+                <e p="Configs" t="Include">
+                  <e p="GameplayConfig.cs" t="Include" />
+                </e>
+                <e p="Environment" t="Include">
+                  <e p="DraggableObject.cs" t="Include" />
+                  <e p="WindowsBreaker.cs" t="Include" />
+                </e>
+                <e p="Player" t="Include">
+                  <e p="DragAndDrop.cs" t="Include" />
+                  <e p="Health.cs" t="Include" />
+                  <e p="InputHandler.cs" t="Include" />
+                  <e p="Player.cs" t="Include" />
+                  <e p="PlayerSFXHandler.cs" t="Include" />
+                  <e p="PlayerVFXHandler.cs" t="Include" />
+                </e>
+                <e p="Root" t="Include">
+                  <e p="BootState.cs" t="Include" />
+                  <e p="GameLoopState.cs" t="Include" />
+                  <e p="GameStateMachine.cs" t="Include" />
+                  <e p="IGameState.cs" t="Include" />
+                  <e p="LoseState.cs" t="Include" />
+                </e>
               </e>
               <e p="Root" t="Include">
                 <e p="Boot.cs" t="Include" />

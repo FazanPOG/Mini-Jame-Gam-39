@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a58043c096462dae4ed5a5ea7e0e20, type: 3}
+  m_Name: GameplayConfig
+  m_EditorClassIdentifier: 
+  _playerLifeTime: 25
+  _walkSpeed: 4
+  _interactDistance: 2
+  _windowHeal: 25
+  _slowHeartBeatClip: {fileID: 8300000, guid: 8172cc35392944b47827faef05071270, type: 3}
+  _fastHeartBeatClip: {fileID: 8300000, guid: a017580e49baaf9419e20293ab84b373, type: 3}
+  _lowHPClip: {fileID: 8300000, guid: afafe98cef35e0e489df28f15c79cabf, type: 3}
+  _deathClip: {fileID: 8300000, guid: 4a6c160314a9c5f4fa835ce2c74781ac, type: 3}
+  _healClip: {fileID: 8300000, guid: 3694ddb1136a20043bbcea1f4a252141, type: 3}
