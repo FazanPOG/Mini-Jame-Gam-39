@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1ebebf2-073d-4817-b680-390fb1275b0b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mini Jame Gam 39/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mini Jame Gam 39/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mini Jame Gam 39/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mini Jame Gam 39/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/PlayerVFXHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/PlayerVFXHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,6 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/Breakable Windows/Scripts/BreakableWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Environment/WindowsBreaker.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/Health.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/PlayerVFXHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Root/GameLoop.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Root/IGameState.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Root/BootState.cs" />
@@ -63,9 +62,10 @@
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Root/GameStateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Root/Boot.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Root/GameLoopState.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/PlayerSFXHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Environment/HumanAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/PlayerVFXHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Game/Gameplay/Player/Player.cs" />
       </list>
     </option>
   </component>
@@ -111,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738995953450</updated>
-      <workItem from="1738995994066" duration="23626000" />
+      <workItem from="1738995994066" duration="23968000" />
     </task>
     <servers />
   </component>
@@ -135,10 +135,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="781" y="222" key="RiderGenerateDialog" timestamp="1739019157874">
+    <state x="781" y="222" key="RiderGenerateDialog" timestamp="1739032615258">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
-    <state x="781" y="222" key="RiderGenerateDialog/3840.148.1366.722/1920.0.1920.1040/0.0.1920.1034@0.0.1920.1034" timestamp="1739019157874" />
+    <state x="781" y="222" key="RiderGenerateDialog/3840.148.1366.722/1920.0.1920.1040/0.0.1920.1034@0.0.1920.1034" timestamp="1739032615258" />
     <state x="609" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1739021992907">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>

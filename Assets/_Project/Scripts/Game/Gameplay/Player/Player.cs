@@ -1,4 +1,5 @@
-﻿using _Project.Audio;
+﻿using System;
+using _Project.Audio;
 using _Project.UI;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -73,6 +74,11 @@ namespace _Project.Gameplay
             DEBUG_STRING = "";
             DEBUG_STRING = $"Health: {Health.Amount} \n" +
                            $"Vignette value: {_vfxHandler.VignetteValue} \n";
+        }
+
+        private void OnDestroy()
+        {
+            _vfxHandler.Dispose();
         }
 
         private void OnDrawGizmos()

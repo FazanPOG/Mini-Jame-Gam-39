@@ -1,11 +1,12 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
 namespace _Project.Gameplay
 {
-    public class PlayerVFXHandler
+    public class PlayerVFXHandler : IDisposable
     {
         private readonly VolumeProfile _volumeProfile;
 
@@ -47,6 +48,11 @@ namespace _Project.Gameplay
                     clampedValue, duration
                 );
             }
+        }
+
+        public void Dispose()
+        {
+            SetDefault();
         }
     }
 }
