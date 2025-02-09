@@ -8,6 +8,7 @@ namespace _Project.Gameplay
         public event Action OnLeftMouseButtonKey;
         public event Action OnLeftMouseButtonKeyDown;
         public event Action OnLeftMouseButtonKeyUp;
+        public event Action OnReloadGameButtonKeyDown;
         
         public void Update()
         {
@@ -24,6 +25,11 @@ namespace _Project.Gameplay
             if (Input.GetKeyUp(KeyCode.Mouse0))
             {
                 OnLeftMouseButtonKeyUp?.Invoke();
+            }
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                OnReloadGameButtonKeyDown?.Invoke();
             }
         }
     }

@@ -16,7 +16,6 @@ namespace _Project.Gameplay
         
         private GameplayConfig _gameplayConfig;
         private DragAndDrop _dragAndDrop;
-        private InputHandler _inputHandler;
         private WindowsBreaker _windowsBreaker;
         private PlayerVFXHandler _vfxHandler;
         private PlayerSFXHandler _sfxHandler;
@@ -24,16 +23,15 @@ namespace _Project.Gameplay
         
         public Health Health { get; private set; }
 
-        public void Init(GameplayConfig gameplayConfig, HUD hud, AudioPlayer audioPlayer)
+        public void Init(GameplayConfig gameplayConfig, HUD hud, InputHandler inputHandler, AudioPlayer audioPlayer)
         {
             _gameplayConfig = gameplayConfig;
             
             _interactDistance = _gameplayConfig.InteractDistance;
             _fpsController.walkSpeed = _gameplayConfig.WalkSpeed;
             
-            _inputHandler = new InputHandler();
-            _dragAndDrop = new DragAndDrop(_camera, _inputHandler, hud, _gameplayConfig.InteractDistance);
-            _windowsBreaker = new WindowsBreaker(_camera, _inputHandler, hud, _gameplayConfig.InteractDistance);
+            _dragAndDrop = new DragAndDrop(_camera, inputHandler, hud, _gameplayConfig.InteractDistance);
+            _windowsBreaker = new WindowsBreaker(_camera, inputHandler, hud, _gameplayConfig.InteractDistance);
             _vfxHandler = new PlayerVFXHandler(_volumeProfile);
             Health = new Health(100);
             _sfxHandler = new PlayerSFXHandler(audioPlayer, Health, this);
@@ -45,6 +43,8 @@ namespace _Project.Gameplay
         public void StopHeartBeat() => _sfxHandler.StopHeartBeat();
 
         public void StartHeartBeat() => _sfxHandler.StartHeartBeat();
+
+        public void DisableMovement() => _fpsController.playerCanMove = false;
 
         private void OnWindowBroken()
         {
@@ -59,7 +59,6 @@ namespace _Project.Gameplay
 
         private void Update()
         {
-            _inputHandler.Update();
             UpdateDebugString();
         }
 

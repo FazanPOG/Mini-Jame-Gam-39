@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using _Project.UI;
 using UnityEngine;
 
 namespace _Project.Gameplay
@@ -12,13 +13,13 @@ namespace _Project.Gameplay
 
         public event Action<IGameState> OnGameStateChanged;
         
-        public GameStateMachine(GameplayConfig config, Player player, MonoBehaviour context)
+        public GameStateMachine(GameplayConfig config, Player player, InputHandler inputHandler, MonoBehaviour context, HUD hud)
         {
             _states = new Dictionary<Type, IGameState>()
             {
                 [typeof(BootState)] = new BootState(this),
                 [typeof(GameLoopState)] = new GameLoopState(config, player, context, this),
-                [typeof(LoseState)] = new LoseState(),
+                [typeof(LoseState)] = new LoseState(inputHandler, player, hud),
             };
         }
 
